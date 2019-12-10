@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project Idea</title>
+	<title>Jamie Liistro Home</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 </head>
 <body>
@@ -31,9 +32,7 @@
 					<li>
 						<a href="projIdea.html">Project Idea</a>
 					</li>
-					<li>
-						<a href="ref.html">Links</a>
-					</li>
+					
 				</ul>
 				
 
@@ -47,78 +46,96 @@
 
 		<div class="box-1">
 
-	<h1 class="center">My project idea</h1>
+	
 
+	<h1 class="center">Automatic soil moisture and PH monitoring system</h1>
 	<br>
 
-	<h2>Companion robot for the elderly</h2>
 
-	<br>
+	
 
-	<h3>Overview.</h3>
+	<h3>Summary</h3>
 	<p>
-		My project idea is to create a robot assistant for elderly people. Virtual assistants now days often seem more advanced than they actually are and I have seen first hand how the elderly often struggle to remember the specific commands i.e. “Ok Google, play Yellow Submarine by the Beetles” to play music. My assistant would be a small robot that is able to follow people around, detect falls and dangerous situations such as spills and gas leaks, and would be programmed with an AI that is more proficient in recognising natural speech and is able to ask questions instead of trying to smartly assume what the person said and output an instant search.
+		For my project, I would like to create a semi-automated garden watering and garden care system. The system will consist of a watering line, connected to an automated tap valve, garden probes to monitor soil moisture and PH and this will be controlled via a smartphone app. The app can be used to alert the user when the probes detect a PH change and it will also retrieve data from the probes and determine a watering schedule for the garden. The app will also allow the user to adjust watering system settings (we are all aware of Australia’s water restrictions). The app will also be used to configure the probes and address them with an ID name, just like any smart home device.  
 	</p>
 	<br>
+	<h3>Why could this project be useful?</h3>
 
-	<h3>Motivation.</h3>
 	<p>
-		I was motivated to come up with this idea by my mother who suffered damage to the speech portion of her brain, she also has trouble with short term memory and struggles with remembering the commands and word flow of how to talk to todays standard virtual assistants. She also is prone to the risk of falls and could be greatly helped if she had a guardian robot watching over her who can assess dangerous situations and respond to queries. She also struggles to link a long sentence together when communicating with virtual assistants and watching her interactions always gives me ideas for how the interaction could be improved (if I knew how to do that). 
+		Plants are diverse and varied, some plants like ferns require little attention to thrive, while other plants like orchids and certain vegetables and fruits need attentive care to yield desirable results. Australia also has some very specific restrictions on when and how you can water a garden, particularly large gardens. I wanted to create a smart watering system, that allowed the user to specify conditions like “Only water between dusk and dawn” or “only water on X, X, X, days of the week”. I also wanted to create a system that replaced the act of taking multiple soil samples around the garden to validate soil PH, as this is a necessary (but tedious) task, especially when growing fruits and vegetables. 
 	</p>
 	<br>
-	<h3>Appearance.</h3>
+	<h2 class="center">Product description</h2>
+	<h3>Smart Valve</h3>
 	<p>
-		The robot will stand approximately 50cm tall, about the height of a bed side table. It will be made from a metal chassis for rigidity and a smooth plastic outer shell that can be shipped in customised colours. The robot will take on a humanoid/friendly/cute appearance to appeal to older people and seem more friendly. It will not have arms or any grabbing functionality yet. The “head” of the robot will be a Mycroft virtual assistant <!--Add link here to MyCroft-->. 
+		The valve will be a standard tap valve that is seen in most analogue tap timers. The internal mechanism will work in the same way, where it opens the valve when it is powered and closes the valve when the power is cut off (this prevents flooding in the event of a power delivery failure). For the valve to work, the water at the tap is always turned on. The smart valve, replaces the manual valve in a standard tap. The smart valve is Wi-Fi connected (through the app) and is able to be triggered by the smartphone app, if the user wants to override the automated system. The valve is powered with a solar panel that can be clipped onto the device and also comes with an extension cable (much like solar powered Christmas lights) so the panel can be placed elsewhere, if the users tap is under cover. 
 
+		</p>
 		<br>
 
-		The robot will travel on a three-wheel system, driven by the back wheel with rear wheel turning. The front wheels will be larger so the robot is able to run over obstacles such as power chords and carpet and the rear wheel will be smaller and wider to give it the ability to efficiently push the robot along. The rear wheel steering makes the robot very manoeuvrable around tight corners and in small spaces. 
+		<h3>Watering System</h3>
 
-	</p>
-
-	<br>
-
-	<h3>Internal structure.</h3>
-	<p>
-		The internal structure of the robot is modelled on the idea of an empty PC chassis. Where the person who builds the computer can move some components around, improve the internal cooling and modify and upgrade existing components. 
-		Many elderly people who need these types of devices don’t have a lot of money to spend on purchasing whole new devices every few years so the aim is to make it as affordable and repairable as possible. To achieve this, the internals will be fully modular and upgradeable and I would attempt to use as many, off the shelf parts instead of proprietary parts to make pricing for upgrades and fixes comparable to the current computer/robotics market. The internal computer system will be fully assembled with no permanently soldered major components, allowing upgrades to any component if it malfunctions. If the battery wares down, it can be replaced, if the hardware slows over time, it can be replaced, if a better resolution tablet is released, it can be replaced, etc. 
-		<br>
-
-		The battery packs will be at the base of the internal system, giving the robot a low centre of gravity and less likely to topple over. The PC components that run the AI and connect the tablets power systems will be in the mid-section with some room between it and the battery for good airflow. Subtle vents worked into the external design and low powered, silent fans, strategically placed around the internals will promote air flow and keep the battery and other components cool. 
-	</p>
-
-	<h3>Functions.</h3>
-	<p>
-		The robot would run on the Mycroft AI which is a very versatile, open source software. The software can be run on a raspberry Pi and used to control sensors for sight, sound output, hearing, gas sensing, robotic movement and smart home control. The AI also needs to have the basic functions of a standard personal assistant. It should be able to set reminders, alarms and search, the internet, features that MyCroft already has. I would like to see the robot have the ability to eventually return to a docking station and self-charge when its batteries are low. I would also like it to be able to autonomously traverse a house and make a virtual map of the rooms so it can move more independently around the home, if needed. 
-	</p>
-
-	<br>
-
-	<h3>Tools and Technologies. </h3>
-
-	<p>
-		<b>Software:</b> A Raspberry Pi, running MyCroft. The AI is open source and will need to be expanded upon to include the functionality of the sensors, boards and motors on the Raspberry Pi to work cohesively with the communication of the AI.<br>
-
-		<b>Hardware:</b> Raspberry Pi and compatible gas sensors, 2.4Ghz WiFi module, camera module, distance sensor, servo motors, servo board, battery pack with charging dock. <br>
-
-		<b>Frame:</b> The frame will need to be fabricated using aluminium and the external cover could be 3D printed or vacuum formed from ABS plastic for durability. <br>
+		<p>
+			The watering system consists of a standard poly tubing that connects to the valve, like a hose and is run throughout the garden, where water is needed. The poly hose is fitted with small jet sprinklers that are placed on the line at the intervals of the users choosing. This procedure follows the standard construction of most garden watering systems and can be done with a pair of hands and a sharp knife, so it’s pretty user friendly. The sprinklers themselves do not turn on independently, when the valve activates, water is sent through the system and out of all of the sprinklers. 
 	</p>
 	<br>
-	<h3>Skills Required. </h3>
-	<p>
-		Extensive coding skills are required to achieve this project. The person that does the coding would require excellent knowledge of the functions and features of Arduino, Raspberry Pi modules and the Python coding language to alter Mycroft to include the necessary features. Skills in metal fabrication and 3D cad modelling would also be ideal so third-party companies don’t need to be hired for the body construction. Skills in Rasp Pi and Arduino construction and a good knowledge of electronics to assemble the internal components and construct a charging station for the robot. 
-	</p>
 
+	<h3>Garden Probes</h3>
+	<p>
+		The probes will be placed into different areas of the garden, like a series of vegetable patches or amongst rows of different types of fruit trees. The probes will have two prongs, one for moisture and one for PH. The housing for the electronics and Bluetooth transmitter will be made of UV resistant plastic and will have a solar panel on top to provide power. 
+Each probe can be addressed with a name and told to monitor a specific PH level so the user can receive alerts from the app and determine which area of the garden needs attention. This procedure would be much like placing smart switches and bulbs around the home and addressing them with names and conditions for how they operate. 
+The probes will transfer data to the tap valve via Bluetooth and the valve will relay information to the app via Wi-Fi. This allows the probes to be placed out of Wi-Fi range and reduces the number of devices connected to the home Wi-Fi. 
+	</p>
+	<br>
+		<h3>Smartphone App</h3>
+
+		<p>
+			The app will be used to address the probes and control the probe settings and view the weekly watering schedule for past and present. PH and moisture data would also be listed in the app so the user can monitor it in real time. Future iterations could also include a database of plant types that the user can choose from, when configuring the probes, to make the whole experience of selecting PH much easier. Additionally, the app could suggest nutrient products to the user when they are having PH issues and a link to purchase those products online or in store could be added as an additional feature. 
+	</p>
 	<br>
 
-	<h3>Outcome.</h3>
+	<h3>Tools and technologies</h3>
+	
+	<ul>
+		<li>A standard, manual, garden watering system, purchased from a local hardware store (poly tube and sprinklers).  </li>
+		<li>A digital or analogue tap valve that can be refitted to receive the smart technology and mechanical components.</li>
+		<li>The housings for the valve and probes can be 3D printed with ABS or PETG plastic for the prototypes, but to ensure longevity, will need to be vacuum formed, using UV resistant plastics. </li>
+		<li>Solar panel kits for powering DIY electronics.</li>
+		<li>Arduino/ Ras Pi will need to be used for the smart technology inside the probes and valve. </li>
+		<li>PH and moisture sensors for Arduino in the probes.</li>
+		<li>An app will need to be coded with parameters for the watering and alert system and a simple user interface will need to be created.  </li>
 
+	</ul>
+	<br>
+
+	<h3>Skills required</h3>
+
+	<ul>
+		<li>Skills in coding for Arduino/Ras Pi and smartphone app.</li>
+		<li>Electronics and construction skills to create the probes and refit the tap valve.</li>
+		<li>App development and coding skills.</li>
+		<li>Configuring smart connected devices. </li>
+		<li>CAD modelling and 3D printer use skills to create the 3D printed prototypes. </li>
+		<li>Gardening knowledge. </li>
+	</ul>
 	<p>
-		If the project is successful, it will open the door for future improvements. As feedback is collected from the testers, the project could be expand upon to improve the useability and functions of the robot. If the robot works as it is intended, elderly people would be able to purchase an assistant that is able to monitor their safety, remind them to take care of themselves, allow easy access to entertainment and knowledge online and control devices around the home. The robot assistant could also provide a sense of companionship and instil a feeling of safety in its users, especially if more personal safety functionalities are developed and improved upon. 
+		I think all of this technology is feasible to set up in the home with consumer and enthusiast technologies and tools. With enough time and research this is a project that could be accomplished by most people who have the time and dedication to learn the different aspects of the project’s construction. 
 	</p>
+	<br>
+	<h3>Outcome</h3>
+	<p>The outcome would be to produce a reliable system for watering and soil PH testing in targeted areas of the garden. It would enable the user to leave their garden unattended for longer periods of time, without worrying so much about time consuming activities such as watering and testing soil PH. The system would also allow people who are away from home to monitor and care for their gardens without human intervention. The project would also help people who are busy and are unable to commit to garden care within the restricted times that Australia’s water restrictions demand. </p>
+
+
+	
+
+
+
+	
 
 </div>
 </div>
+
+	
 
 
 </body>
